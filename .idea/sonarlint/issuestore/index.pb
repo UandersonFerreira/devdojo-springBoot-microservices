@@ -1,8 +1,6 @@
 
 ©
 yspring-boot-microservices/src/test/java/academy/devdojo/microservices/course/SpringBootMicroservicesApplicationTests.java,b/4/b448053a55224ccc933db7fb2371f2b6961c3ca7
-T
-$spring-boot-microservices/.gitignore,a/2/a2aaf2962844b87f0f29e4a51c60dc9f2231240b
 
 Ocore/src/main/java/academy.devdojo.microservices.core/model/AbstractEntity.java,c/c/cc7f07f4c069766855f75aebf71c32ce7e4d9719
 w
@@ -23,3 +21,6 @@ Q
 tspring-boot-microservices/src/main/java/academy/devdojo/microservices/course/SpringBootMicroservicesApplication.java,4/b/4b83afbd6572dcec682cab094eb48bbe1f25e91e
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
