@@ -14,17 +14,25 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging><!--INDICA QUE OS MÓDULOS CRIADOS IRÃO HERDAR DESSE POM (super pom)-->
 
-    <properties>
-        <java.version>11</java.version>
-        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
-    </properties>
-
     <modules><!--DEFIMOS OS MODULOS QUE IRÃO HERDAR AS CONFIGURAÇÕES DESSE POM.XML-->
         <module>spring-boot-microservices</module>
         <module>core</module>
     </modules>
 
+    <properties>
+        <java.version>11</java.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <nimbus-jose.version>7.0</nimbus-jose.version>
+    </properties>
+
     <dependencies> <!--SÃO AS DEPENDÊNCIAS QUE OS MÓDULO IRÃO HERDAR-->
+
+        <dependency><!-- Jwt-token -->
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose.version}</version>
+        </dependency>
+
         <dependency> <!--Gateway-CLIENTE para registrar todos os microservices-->
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

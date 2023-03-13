@@ -38,8 +38,6 @@ Xgateway/src/test/java/academy/devdojo/microservices/gateway/GatewayApplicationT
 auth/HELP.md,e/5/e5104cf8d4390cd935115fd3dd0088bb224961a3
 A
 discovery/pom.xml,a/c/ac3e1555725512e9cd39c39120cd768bda4aa7b4
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 w
 Gcore/src/main/java/academy.devdojo.microservices.core/model/Course.java,1/4/14009cd4f3f20672db2325e81752b42d113c6e58
 è
@@ -52,3 +50,5 @@ z
 Jauth/src/main/java/academy/devdojo/microservices/auth/AuthApplication.java,a/b/ab314961b3698fc9221151be56277e5e0838d527
 Ñ
 Tcore/src/main/java/academy.devdojo.microservices.core/property/JwtConfiguration.java,2/d/2dc6653574c5ccb34ae0956844def642fe084236
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
