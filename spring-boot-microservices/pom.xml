@@ -2,13 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
+    <parent><!-- INFORMA DE QUEM ESTAMOS HERDANDO AS CONFIGURAÇÕES-->
         <groupId>academy.devdojo.uanderson</groupId>
         <artifactId>devdojo-microservices</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- LOCALIZAÇÃO DO ARQUIVO DE CONFIGURAÇÕES HERDADAS -->
     </parent>
 
+    <!--TEMOS AS CONFIGURAÇÕES DEFAULTS DO MODULO/APLICAÇÃO CRIADO-->
     <artifactId>spring-boot-microservices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-microservices</name>
@@ -19,15 +20,33 @@
     </properties>
 
     <dependencies>
-        <dependency>
+        <dependency> <!--Core-->
             <groupId>academy.devdojo.uanderson</groupId>
             <artifactId>core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
-    <build>
+    <build><!--ONDE DEFINIMOS OS PLUGINS QUE SERÃO UTILIZADOS EM ALGUM CICLO DE VIDA DO MAVEN-->
+        <finalName>discovery</finalName><!--Nome do Jar(Aplicação executavel) Gerado-->
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -44,3 +63,17 @@
     </build>
 
 </project>
+
+<!--
+O ciclo de vida do Maven:
+    compile - compila o código fonte do projeto
+    test - executa os testes unitários do código compilado, usando uma ferramenta de testes unitários, como o junit.
+    package - empacota o código compilado de acordo com o empacotamento escolhido, por exemplo, em JAR.
+    integration-test - processa e faz o deploy do pacote em um ambiente onde os testes de integração podem ser rodados.
+    install - instala o pacote no repositório local, para ser usado como dependência de outros projetos locais
+    deploy - feito em ambiente de integração ou de release, copia o pacote final para um repositório remoto para ser compartilhado entre desenvolvedores e projetos
+
+Você pode invocar qualquer dessas fases na linha de comando, digitando:
+
+mvn [fase]
+-->

@@ -10,14 +10,14 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor//Construtor sem argumentos
+@AllArgsConstructor//Construtor com todos os abritubos
 @ToString
 @EqualsAndHashCode
 public class Course implements AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @EqualsAndHashCode.Include
+    @EqualsAndHashCode.Include//Indica o(s) campo(s) usando na geração do equalsandhasCode será somente o 'id';
     private Long id;
     @NotNull(message = "The field 'title' is mandatory!!")
     @Column(nullable = false)

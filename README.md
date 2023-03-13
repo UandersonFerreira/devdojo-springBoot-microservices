@@ -12,9 +12,9 @@ aqui: [Linkedin - William Suane](https://www.linkedin.com/in/williamsuane/)
 
 1. Spring Boot Microservices    - Apresentação do curso
 1. Spring Boot Microservices    - Spring Boot Microservices - Introdução
-1. Spring Boot Microservices 01 - 
-1. Spring Boot Microservices 02 - 
-1. Spring Boot Microservices 03 - 
+1. Spring Boot Microservices 01 - Setup Inicial
+1. Spring Boot Microservices 02 - Modularizando o Projeto 
+1. Spring Boot Microservices 03 - Service discovery Eureka e Gateway Zuul
 1. Spring Boot Microservices 04 - 
 1. Spring Boot Microservices 05 - 
 1. Spring Boot Microservices 06 -  

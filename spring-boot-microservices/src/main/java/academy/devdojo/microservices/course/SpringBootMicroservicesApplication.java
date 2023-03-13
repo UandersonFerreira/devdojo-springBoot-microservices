@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@EntityScan({"academy.devdojo.microservices.core.model"})
+@EntityScan({"academy.devdojo.microservices.core.model"})// especificar quais pacotes queremos verificar para classes de entidade
 @EnableJpaRepositories({"academy.devdojo.microservices"})
 public class SpringBootMicroservicesApplication {
 
@@ -16,3 +16,17 @@ public class SpringBootMicroservicesApplication {
     }
 
 }
+
+/*
+A anotação @EntityScan é usada quando as classes de
+entidade não são colocadas no pacote principal do
+aplicativo ou seus subpacotes. Ou seja,é quando usa
+um pacote de raiz completamente diferente.
+ex: Course.java está dentro do modulo 'core', mas está sendo usada em
+CourseController.java que está dentro do modulo 'spring-boot-microservices'.
+
+
+Devemos estar cientes de que o uso do EntityScan
+desativará a verificação de configuração automática do
+Spring Boot para entidades.
+ */
