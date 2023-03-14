@@ -16,7 +16,7 @@ aqui: [Linkedin - William Suane](https://www.linkedin.com/in/williamsuane/)
 1. Spring Boot Microservices 02 - Modularizando o Projeto 
 1. Spring Boot Microservices 03 - Service discovery Eureka e Gateway Zuul
 1. Spring Boot Microservices 04 - Authentication Service Signed and Encrypted JWT (JWS+JWE) pt 01
-1. Spring Boot Microservices 05 - 
+1. Spring Boot Microservices 05 - Authentication Service Signed and Encrypted JWT (JWS+JWE) pt 02
 1. Spring Boot Microservices 06 -  
 1. Spring Boot Microservices 07 - 
 1. Spring Boot Microservices 08 - 

@@ -18,8 +18,6 @@ $spring-boot-microservices/.gitignore,a/2/a2aaf2962844b87f0f29e4a51c60dc9f22312
 Vcore/src/main/java/academy.devdojo.microservices.core/repository/CourseRepository.java,1/a/1af6d0402c4aac263b1746db08a00aa1dd824727
 ?
 gateway/HELP.md,7/9/7975d688085ec93b6dad687193c5dc6824bbe054
-¦
-vspring-boot-microservices/src/main/java/academy/devdojo/microservices/course/endpoint/controller/CourseController.java,1/7/171749cd4467c492dd8b184d946c1c72c594e04f
 ?
 annotations.txt,6/0/60574e3329781ceedf59fd4e367ee7312979a7fc
 <
@@ -50,5 +48,3 @@ z
 Jauth/src/main/java/academy/devdojo/microservices/auth/AuthApplication.java,a/b/ab314961b3698fc9221151be56277e5e0838d527
 „
 Tcore/src/main/java/academy.devdojo.microservices.core/property/JwtConfiguration.java,2/d/2dc6653574c5ccb34ae0956844def642fe084236
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
